@@ -1,0 +1,174 @@
+body {
+    font-family: Nunito;
+    /*cursor: url('../img/cursor.png');*/
+}
+
+/* text */
+h1, h2, h3, h4, h5, h6 {font-family: Coiny}
+
+p {margin: 0px; font-size: larger;}
+
+i {scale: 140%; width: 17px; height: 17px;}
+
+a, a:link {text-decoration: none}
+
+.bold {font-weight: bold}
+
+.sizeDown {scale: 100% !important}
+
+/* pages with the navbar */
+.dashboard {margin-top: 100px}
+
+/* home */
+.home-screen{
+    display: flexbox;
+    padding: 5% 10% !important;
+    text-align: center;
+}
+
+.home-screen > *:not(:last-child) {
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+} 
+
+.home-title {align-self: center; font-size: 300%;}
+
+#scrollQ {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+#menuQ {
+    z-index: 1;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+/* colors */
+.txt-white {color: #ffffff}
+.txt-black {color: #252424}
+.txt-green {color: #10E0B8}
+.txt-yellow {color: #FFC444}
+.txt-red {color: #EB1652}
+.txt-purple {color: #9111F2}
+
+.bg-green {background: #10E0B8; padding: 5%}
+.bg-yellow {background: #FFC444; padding: 5%}
+.bg-red {background: #EB1652; padding: 5%}
+.bg-purple {background: #9111F2; padding: 5%}
+.bg-black {background: #252424 !important; color: #ffffff; padding: 5%}
+.bg-white {background: #ffffff; padding: 5%}
+.bg-off {background: rgba(124, 124, 124, 0.1); color: #ffffff; padding: 4%}
+
+.bg-active { background: #10E0B8; border-radius: 100px !important;}
+
+.bg-experience {background: #10E0B8; border-radius: 100px !important;}
+.bg-energy {background: #FFC444; border-radius: 100px !important;}
+
+/* cards borders and shadows */
+.card {
+    border: 3px solid #252424;
+    border-radius: 10px;
+    box-shadow: 4px 4px #252424;
+    text-align: center;
+
+    &.circle {
+        padding: 14px !important;
+        border-radius: 100% !important;
+    }
+
+    &.round {
+        border-radius: 100px !important;
+    }
+}
+
+.menu {
+    border: 3px solid #252424;
+    border-radius: 10px;
+    box-shadow: 4px 4px #252424;
+    text-align: center;
+    background: #ffffff;
+    color: #252424;
+    padding: 2%;
+}
+
+.menu:hover {
+    background: #252424;
+    color: #ffffff;
+    scale: 115%;
+  }
+
+/* form inputs */
+input {
+    border: none;
+    background: none;
+}
+
+.card-header {
+    border-bottom: 3px solid #252424;
+}
+
+button {
+    align-items: center;
+}
+
+/* animations */
+.home-gradient {
+    background: linear-gradient(0deg, #eb1652, #eb1652, #9111f2, #9111f2);
+    background-size: 100% 140%;
+
+    animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+}
+
+.encounter {
+    animation: encounter-on 1s infinite;
+    -webkit-animation: encounter-on 1s infinite;
+}
+
+@keyframes encounter-on  {
+    0%   {background-color:#5c0b9b;}
+    50%  {background-color:#9111F2;}
+    100% {background-color:#5c0b9b;}
+}
+
+@-webkit-keyframes encounter-on {
+    0%   {background-color:#5c0b9b;}
+    50%  {background-color:#9111F2;}
+    100% {background-color:#5c0b9b;}
+}
+
+#testimonials {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+.t-scroll {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: infinite-scroll 60s linear infinite;
+    -webkit-animation: infinite-scroll 60s linear infinite;
+}
+  
+.t-scroll p {display: inline-block;}
+  
+@keyframes infinite-scroll {
+    0% {transform: translate3d(0, 0, 0);}
+    100% {transform: translate3d(-50%, 0, 0);}
+}
+
+@-webkit-keyframes infinite-scroll {
+    0% {transform: translate3d(0, 0, 0);}
+    100% {transform: translate3d(-50%, 0, 0);}
+}
